@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad Page</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    .ad-label {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+
+    .ad-box {
+      background: #fff;
+      border: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 35px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    /* 728x90 Ad */
+    .ad-728x90 {
+      width: 728px;
+      height: 90px;
+      max-width: 100%;
+    }
+
+    /* 300x250 Ad */
+    .ad-300x250 {
+      width: 300px;
+      height: 250px;
+    }
+
+    @media (max-width: 760px) {
+      .ad-728x90 {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 728 / 90;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- 728x90 Advertisement -->
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-box ad-728x90">
+      728 × 90 Ad
+    </div>
+
+    <!-- 300x250 Advertisement -->
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-box ad-300x250">
+      300 × 250 Ad
+    </div>
+
+  </main>
+
+</body>
+</html>
