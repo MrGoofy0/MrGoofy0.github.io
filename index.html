@@ -1,9 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ad Page</title>
+  <title>Advertisement</title>
 
   <style>
     * {
@@ -14,10 +15,10 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f5f5f5;
-      color: #333;
     }
 
     .container {
+      width: 100%;
       max-width: 1000px;
       margin: 0 auto;
       padding: 30px 15px;
@@ -37,18 +38,17 @@
       align-items: center;
       justify-content: center;
       margin: 0 auto 35px;
-      color: #aaa;
-      font-size: 14px;
+      overflow: hidden;
     }
 
-    /* 728x90 Ad */
+    /* 728x90 */
     .ad-728x90 {
       width: 728px;
       height: 90px;
       max-width: 100%;
     }
 
-    /* 300x250 Ad */
+    /* 300x250 */
     .ad-300x250 {
       width: 300px;
       height: 250px;
@@ -70,17 +70,31 @@
 
     <!-- 728x90 Advertisement -->
     <div class="ad-label">Advertisement</div>
+
     <div class="ad-box ad-728x90">
-      728 × 90 Ad
+      <script async
+        src="https://ad2coin.com/s/w.js"
+        data-unit-id="cmupixoud006110mev973iyaj"
+        data-width="728"
+        data-height="90">
+      </script>
     </div>
+
 
     <!-- 300x250 Advertisement -->
     <div class="ad-label">Advertisement</div>
+
     <div class="ad-box ad-300x250">
-      300 × 250 Ad
+      <script async
+        src="https://ad2coin.com/s/w.js"
+        data-unit-id="cmupiyw36006510me4fwsrh3o"
+        data-width="300"
+        data-height="250">
+      </script>
     </div>
 
   </main>
 
 </body>
 </html>
+```
