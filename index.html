@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,17 +40,26 @@
       overflow: hidden;
     }
 
-    /* 728x90 */
     .ad-728x90 {
       width: 728px;
       height: 90px;
       max-width: 100%;
     }
 
-    /* 300x250 */
     .ad-300x250 {
       width: 300px;
       height: 250px;
+    }
+
+    .ad-160x600 {
+      width: 160px;
+      height: 600px;
+    }
+
+    .ad-970x250 {
+      width: 970px;
+      height: 250px;
+      max-width: 100%;
     }
 
     @media (max-width: 760px) {
@@ -59,6 +67,12 @@
         width: 100%;
         height: auto;
         aspect-ratio: 728 / 90;
+      }
+
+      .ad-970x250 {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 970 / 250;
       }
     }
   </style>
@@ -70,7 +84,6 @@
 
     <!-- 728x90 Advertisement -->
     <div class="ad-label">Advertisement</div>
-
     <div class="ad-box ad-728x90">
       <script async
         src="https://ad2coin.com/s/w.js"
@@ -80,10 +93,8 @@
       </script>
     </div>
 
-
     <!-- 300x250 Advertisement -->
     <div class="ad-label">Advertisement</div>
-
     <div class="ad-box ad-300x250">
       <script async
         src="https://ad2coin.com/s/w.js"
@@ -93,8 +104,29 @@
       </script>
     </div>
 
+    <!-- 160x600 Advertisement -->
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-box ad-160x600">
+      <script async
+        src="https://ad2coin.com/s/w.js"
+        data-unit-id="cmupj16lx006710mewlz7xg68"
+        data-width="160"
+        data-height="600">
+      </script>
+    </div>
+
+    <!-- 970x250 Advertisement -->
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-box ad-970x250">
+      <script async
+        src="https://ad2coin.com/s/w.js"
+        data-unit-id="cmupjmai0007h10meh8hugcfb"
+        data-width="970"
+        data-height="250">
+      </script>
+    </div>
+
   </main>
 
 </body>
 </html>
-```
